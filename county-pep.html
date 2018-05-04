@@ -4,17 +4,24 @@
 
 <h3>Population Change Type</h3>
 <form id="county_type">
-  <label><input type="radio" name="county_type" value="11" checked="checked"> Natural population increase, '16-'17 </label><br>
-  <label><input type="radio" name="county_type" value="14"> Net migration, '16-'17</label><br>
-  <label><input type="radio" name="county_type" value="16"> Domestic migration, '16-'17</label><br>
-  <label><input type="radio" name="county_type" value="15"> International migration, '16-'17</label><br>
-  <label><input type="radio" name="county_type" value="10"> Total population change, '16-'17</label>
+  <label><input type="radio" name="county_type" value="11" checked="checked"> Natural population change (births - deaths) ('16-'17)</label><br>
+  <label><input type="radio" name="county_type" value="14"> Net migration ('16-'17)</label><br>
+  <label><input type="radio" name="county_type" value="16"> Domestic migration ('16-'17)</label><br>
+  <label><input type="radio" name="county_type" value="15"> International migration ('16-'17)</label><br>
+  <label><input type="radio" name="county_type" value="10"> Total population change ('16-'17)</label>
 </form>
 
 <select id="select_year">
   <option value="2016-2017">2016-2017</option>
   <option value="2010-2017">2010-2017</option>
 </select>
+
+<h3>Which Counties are Gaining or Losing Migrants?</h3>
+<form id="gainloss_type">
+<label><input type="checkbox" name="gainloss_type" value="1" checked="checked">Gaining both domestic and international migrants</label><br>
+<label><input type="checkbox" name="gainloss_type" value="2">Net migrant gain due to immigrants <br> (i.e. net domestic migrant loss, but sufficiently large international migrant gains)</label><br>
+<label><input type="checkbox" name="gainloss_type" value="3">Net migrant loss <br> (i.e. losing domestic migrants and insufficient international migrant gains)</label><br>
+</form>
 
 <!-- div for the accompanying chart -->
 <div id="drilldown_chart"></div>
