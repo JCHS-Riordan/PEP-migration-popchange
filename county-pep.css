@@ -1,0 +1,47 @@
+#county_migration_map {
+  height: 600px; 
+  width: 800px; 
+  margin: 0px auto; 
+}
+
+h2 {
+  text-align: center;
+  color: #C14D00;
+  font-family: "Lucida Grande", "Lucida Sans Unicode", sans-serif;
+  font-size: 20px;
+  margin: 0px;
+  /*font-weight: normal;*/
+}
+
+table {
+  width: 800px;
+  margin: auto;
+}
+
+select {
+  margin: 20px auto;
+  font-size:16px; 
+  display: block;
+  height: 22px;
+  width: 100px;
+}
+
+#drilldown_chart {
+  height: 175px; 
+  width: 600px;
+  margin: 20px auto;
+}
+
+h3 {
+  text-align: center;
+  color: #C14D00;
+  font-family: "Lucida Grande", "Lucida Sans Unicode", sans-serif;
+  font-size: 20px;
+  margin: 0px auto;
+  /*font-weight: normal;*/
+}
+
+#county_type {
+  margin: auto;
+  width: 260px;
+}
