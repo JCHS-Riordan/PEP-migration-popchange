@@ -45,3 +45,9 @@ h3 {
   margin: auto;
   width: 260px;
 }
+
+#gainloss_type {
+  margin: auto;
+  width: 300px;
+  text-align: center;
+}
