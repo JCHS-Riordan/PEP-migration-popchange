@@ -1,0 +1,35 @@
+<!-- div for the main map -->
+<h2>County-level Migration & Population Change</h2>
+<div id="county_migration_map"></div>
+
+<h3>Population Change Type</h3>
+<form id="county_type">
+  <label><input type="radio" name="county_type" value="11" checked="checked"> Natural population increase, '16-'17 </label><br>
+  <label><input type="radio" name="county_type" value="14"> Net migration, '16-'17</label><br>
+  <label><input type="radio" name="county_type" value="16"> Domestic migration, '16-'17</label><br>
+  <label><input type="radio" name="county_type" value="15"> International migration, '16-'17</label><br>
+  <label><input type="radio" name="county_type" value="10"> Total population change, '16-'17</label>
+</form>
+
+<select id="select_year">
+  <option value="2016-2017">2016-2017</option>
+  <option value="2010-2017">2010-2017</option>
+</select>
+
+<!-- div for the accompanying chart -->
+<div id="drilldown_chart"></div>
+
+<!-- Highchart mapping library -->
+<script src="https://code.highcharts.com/maps/highmaps.js"></script>
+
+<!-- JCHS Shapefiles (GeoJSON format) -->
+<script src="http://code.highcharts.com/mapdata/countries/us/us-all-all-highres.js"></script>
+<script src="https://s3.amazonaws.com/jchs-geojson-test/states_2016_simplified_precision1_js.js"></script>
+
+<!-- jQuery (for additional interactive features) -->
+<script src="https://code.jquery.com/jquery-3.1.1.min.js"></script>
+
+<!-- Highchart core library, for charts -->
+<script src="https://code.highcharts.com/highcharts.js"></script>
+<script src="https://code.highcharts.com/modules/series-label.js"></script>
+<script src="https://code.highcharts.com/maps/modules/exporting.js"></script>
