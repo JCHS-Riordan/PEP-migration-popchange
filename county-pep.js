@@ -23,6 +23,27 @@ var data_classes_netflow = [
   {
     from: -100,
     to: 0,
+    color: "#F9F6F5" //Alternating between off-white: '#F9F6F5' and light red: '#FF8372'
+  },
+  {
+    from: 0,
+    to: 100,
+    color: "#F9F6F5" //Alternating between off-white: '#F9F6F5' and light blue: '#B9EEEC'
+  },
+  {
+    from: 100,
+    to: 1000,
+    color: "#ABBFC3"
+  },
+  {
+    from: 1000,
+    color: "#4E7686"
+  }
+]
+
+var data_classes_immigrants = [
+  {
+    to: 0,
     color: "#FF8372"
   },
   {
