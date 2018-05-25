@@ -23,7 +23,7 @@ var data_classes_netflow = [
   {
     from: -100,
     to: 0,
-    color: "#F9F6F5" //Alternating between off-white: '#F9F6F5' and light red: '#FF8372'
+    color: "#FF8372" //Alternating between off-white: '#F9F6F5' and light red: '#FF8372'
   },
   {
     from: 0,
@@ -162,6 +162,9 @@ function createMap () {
         //use subtitle element for our table notes
         text:
           "Notes: This is a test of the Vault-Tec emergency broadcast system. <br/>Source: JCHS tabulations of US Census Bureau, Population Estimates Program.",
+        /*Original Census data note on international immigration explains how it can be negative (original understanding was only int'l inflows):
+        [2] Net international migration for the United States includes the international migration of both native and foreign-born populations. Specifically, it includes: (a) the net international migration of the foreign born, (b) the net migration between the United States and Puerto Rico, (c) the net migration of natives to and from the United States, and (d) the net movement of the Armed Forces population between the United States and overseas. Net international migration for Puerto Rico includes the migration of native and foreign-born populations between the United States and Puerto Rico.*/
+        
         widthAdjust: -300,
         align: "left",
         x: 300,
